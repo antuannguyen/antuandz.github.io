@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">    <!-- Engligh language, en stands for engligh--> 
+<head>
+
+  <title>Home page</title>  <!-- you need a title for your webpage ! -->
+  <meta charset="utf-8">    <!-- Character set of English -->
+
+  <!-- if you are using a bootstrap - we need some external links to be linked to yur webpage -->
+  <!-- because, bootstrap includes CSS, JAvascripts, html --->
+  <!-- we need to compulsorily copypaste few LINKS of bootstrap -->
+  <!-- they are called CDN links -->
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- CDN link for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #more {display: none;}
+
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+  </style>
+
+  <!-- iNSERT THE JAVASCRIPT CODE HERE -->
+  <script>
+  	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+</head>
+
+<!--- NOW , WE WILL START CODING OUR WEBSITE -->
+
+<!-- NAV BAR codes -->
+<body style="height:1500px">
+
+<nav class="navbar navbar-expand-sm bg-green navbar-dark fixed-top">
+  <a class="navbar-brand" href="Webpage 1.html">Carzone</a>
+  <ul class="navbar-nav ml-auto">  <!-- i need my menus on top right -->
+  	<!-- ml-auto stands for MARGIN LEFT -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/Homepage.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/About-us.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/Gal.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/Blog%202.html">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/CONT.html">Contact</a>
+    </li>
+  </ul>
+  <!-- after the navbar code, I have inserted a code for SEARCH -->
+
+  <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+</nav>
+
+
+ <!-- NAV BAR ends here -->
+
+ <!-- CARASOUL starts here -->
+ <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="D:/Kỳ 7/Web Design 2/z3.jpg" alt="first bg image"  >
+      <div class="carousel-caption">
+        <h2>New Arrival</h2>
+        <h3>Lamborghini Huracan EVO 2020</h3>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="D:/Kỳ 7/Web Design 2/z1.jpg" alt="first bg image" >
+      <div class="carousel-caption">
+        <h2>More Speed</h2>
+        <h3>Lamborghini Huracan EVO 2020</h3>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="D:/Kỳ 7/Web Design 2/z4.jpg" alt="first bg image"   >
+      <div class="carousel-caption">
+        <h2>Save More Energy</h2>
+        <h3>Lamborghini Huracan EVO 2020</h3>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<section>
+	<div class="container">
+		<h1 class="text-center pt-5">About us</h1> <!-- pt means padding, value shud be between 1 to 5 -->
+		<hr class="w-100 pt-5"> <!-- hr is the line under about us-->
+
+		<div class="row">
+			<div class="col">
+				<img src="D:/Kỳ 7/Web Design 2/z2.jpg" width="350" height="500">
+			</div>
+			<div class="col">
+				<h2>Our story</h2>
+				<br>
+				<p>The portal operates via multiple online platforms including a desktop website and various mobile solutions including Apple and Android applications.Via our daily interactions with the entire landscape of trusted professional motor dealers and leading motoring manufacturer brands, we provide tools and content that enable Irish consumers to confidently research the second largest purchase they are ever likely to make - a car<span id="dots">...</span><span id="more"> The portal operates via multiple online platforms including a desktop website and various mobile solutions including Apple and Android applications.
+This activity culminates in just under 1 Million serious buyers and sellers coming together on the platform on a monthly basis. During 2015 over 110 million searches for used cars were carried out on Carzone.
+</span></p> <br>
+
+				<button onclick="myFunction()" id="myBtn">Read more</button>
+			
+
+
+			</div>
+		</div>
+</section>
+
+<!----------------- Footer ------------------->
+<!-- I have written every styling codes (CSS codes) under one style tag -->
+<style>
+
+
+.footer {
+  position: fixed;    
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 70px;
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+
+.fa:hover {
+    opacity: 0.2;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+<!-- I am done with my CSS codes for the Social media icons, now lets do the HTML-->
+
+<div class="footer">
+	<br>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+
+  
+  <p class="pt-2"> copyright 2020 </p>
+
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 70px;
+  padding-bottom: 100px;
+}
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+</body>
+
+
+
+</html>

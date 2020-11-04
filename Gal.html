@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<title>MapleStory Homepage</title>
+    <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #more {display: none;}
+
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+  </style>
+
+  <!-- iNSERT THE JAVASCRIPT CODE HERE -->
+
+}
+  </script>
+</head>
+<body style=" height: 1500px">
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+  <a class="navbar-brand" href="#">Carzone</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+  <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/Homepage.html">Home</a>
+  </li>
+    <li class="nav-item">
+  <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/About-us.html">About Us</a>
+  </li>
+    <li class="nav-item">
+  <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/Gal.html">Gallery</a>
+  </li>
+   <li class="nav-item">
+      <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/Blog%202.html">Blog</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" href="file:///D:/K%E1%BB%B3%207/Web%20Design%202/CONT.html">Contact</a>
+  </li>
+  </ul>
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+</nav>
+
+<div class="container-fluid" style="margin-top:80px">
+  
+</div>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+<body>
+
+<div style="text-align:center">
+  <h2></h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="D:/Kỳ 7/Web Design 2/13.jpg" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:/Kỳ 7/Web Design 2/z1.jpg" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:/Kỳ 7/Web Design 2/z3.jpg" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:/Kỳ 7/Web Design 2/z4.jpg" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:/Kỳ 7/Web Design 2/1.jpg" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:/Kỳ 7/Web Design 2/2.jpg" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+    </div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
